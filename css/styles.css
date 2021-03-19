@@ -45,7 +45,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 h1,
@@ -60,6 +60,10 @@ ul {
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+.section {
+  padding-bottom: 94px;
 }
 
 /* шапка сайта */
@@ -78,6 +82,34 @@ ul {
 }
 
 .page-header {
+  display: flex;
+}
+
+.main-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.main-nav,
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.site-nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav-list,
@@ -100,12 +132,25 @@ ul {
   color: var(--accent-color);
 }
 
+.nav-link {
+  display: flex;
+  margin-left: auto;
+ 
+}
+
+.nav-link .item + .item {
+  margin-left: 50px;
+}
+
 .nav-link,
 .nav-link .link {
   color: var(--primary-text-color);
   font-weight: var(--medium-font-weight);
   line-height: 1.14;
   list-style: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* hero */
@@ -120,11 +165,19 @@ ul {
   text-transform: uppercase;
 
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
 }
 
 .hero {
   background-color: var(--background-section-color);
-  text-align: center;
+  text-align: center; 
+}
+
+.hero-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .button {
@@ -151,8 +204,17 @@ ul {
 
 /* Особенности */
 
+.features {
+  padding-top: 94px;
+}
+
+.features .list .item.item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features .list {
   list-style: none;
+  display: flex;
 }
 
 .features .title,
@@ -174,6 +236,7 @@ ul {
 
 .work-list .list {
   list-style: none;
+  display: flex;
 }
 
 .work-list .title,
@@ -189,7 +252,13 @@ ul {
   margin-bottom: 50px;
 }
 
+.list .box:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Наша команда */
+
+
 
 .team {
   background-color: #f5f4fa;
@@ -197,6 +266,11 @@ ul {
 
 .team .list {
   list-style: none;
+  display: flex;
+}
+
+.list .team-card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team .name {
@@ -221,9 +295,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.team img {
-  margin-bottom: 30px;
-}
+
 
 img {
   display: block;
@@ -231,16 +303,14 @@ img {
   height: auto;
 }
 
-.team-card .profession {
-  margin-bottom: 30px;
-}
+
 
 .team-card {
   background-color: var(--primary-write-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  display: inline-block;
+  
 }
 
 /* footer */
@@ -251,6 +321,11 @@ img {
 
 .footer .adr {
   margin-bottom: 20px;
+}
+
+.footer .main {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {

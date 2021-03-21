@@ -208,6 +208,11 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
+.hero-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 /* Особенности */
 
 .features {
@@ -433,8 +438,7 @@ img {
   box-sizing: border-box;
 
   width: calc((100%-60px) / 3);
-  width: 370px;
-  display: block;
+  max-width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }

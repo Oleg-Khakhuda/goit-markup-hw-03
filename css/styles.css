@@ -143,19 +143,19 @@ img {
 .nav-link {
   display: flex;
   margin-left: auto;
+  list-style: none;
 }
 
 .nav-link .item + .item {
     margin-left: 50px;
   }
 
-.nav-link,
+
 .nav-link .link {
   color: var(--primary-text-color);
   font-weight: var(--medium-font-weight);
   line-height: 1.14;
-  list-style: none;
-
+  
   padding-top: 32px;
   padding-bottom: 32px;
 }

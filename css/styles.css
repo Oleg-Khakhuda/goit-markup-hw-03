@@ -105,8 +105,7 @@ img {
 .main-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
 
 .site-nav-list {
@@ -184,6 +183,8 @@ img {
 .hero {
   background-color: var(--background-section-color);
   text-align: center; 
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .button {
@@ -206,11 +207,6 @@ img {
 .hero .button:hover,
 .hero .button:focus {
   background-color: var(--secondary-bg-color);
-}
-
-.hero-content {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 /* Особенности */
@@ -271,6 +267,7 @@ img {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
 }
 
 .team .list {
@@ -320,6 +317,8 @@ img {
 
 .footer {
   background-color: var(--background-section-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .adr {
@@ -327,8 +326,7 @@ img {
 }
 
 .footer .main {
-  padding-top: 60px;
-  padding-bottom: 60px;
+ 
 }
 
 .footer .logo {
